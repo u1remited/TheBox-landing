@@ -1,0 +1,108 @@
+.project {
+    padding: 5.5rem 0 8.625rem 0;
+    &__wrapper {
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__tabs {
+        padding-left: 1.25rem;
+    }
+
+    &__tab {
+        &:not(:last-child) {
+            margin-bottom: 1.25rem;;
+        }
+        a {
+            color: #C2C7D6;
+            font-size: var(--h3-fz);
+            &:hover {
+                color: #979daf;
+            }
+        }
+
+        &_active {
+            position: relative;
+            a {
+                font-weight: var(--bold-weight);
+                color: var(--main-color);  
+                &:hover {
+                    color: var(--main-color);
+                }   
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 4px;
+                    height: 28px;
+                    top: 0;
+                    left: -1.25rem;
+                    background-color: var(--main-color);
+                }
+            }
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 384px);
+        grid-template-rows: repeat(2, minmax(331px, auto));
+        grid-auto-rows: minmax(331px, auto);
+        gap: 2rem;
+    }
+
+    &__item {
+        &:hover {
+            .project__info {
+                transform: none;
+            }
+        }
+    }
+
+    &__info {
+        background-color: var(--main-color);
+        padding: .75rem 0 1rem .75rem;
+        transform: translateY(-5%);
+        transition: .4s all;
+    }
+
+    &__name {
+        color: var(--white-color);
+        font-size: var(--h4-fz);
+        font-weight: var(--bold-weight);
+    }
+
+    &__location {
+        margin-top: .75rem;
+        color: var(--white-color);
+        font-size: var(--header-fz);
+    }
+    &__btns {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        transition: .4s all;
+        column-gap: 10px;
+        &:hover {
+            background-color: var(--title-color-hover);
+            color: var(--white-color);
+            .project__btn-icon-r {
+                transform: translateX(-10%);
+            }
+            .project__btn-icon-n {
+                transform: translateX(10%);
+            }
+        }
+    }
+
+    &__btn-icon-n,
+    &__btn-icon-r {
+        font-size: 1.125rem;
+        transition: .4s all;
+        color: var(--white-color);
+    }
+}

@@ -1,0 +1,115 @@
+.footer {
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 5.3125rem 0 5rem 0;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        a {
+            transition: .4s all;
+            &:hover {
+                color: var(--main-color);
+            }
+        }
+    }
+
+    &__address {
+        display: flex;
+        column-gap: .7rem;
+    }
+
+    &__subtitle {
+        color: var(--main-color);
+        font-size: var(--h4-fz);
+        font-weight: var(--medium-weight);
+        text-transform: uppercase;
+    }
+
+    &__info {
+        color: var(--title-color);
+        font-size: var(--h4-fz);
+    }
+
+    &__phone {
+        display: flex;
+        column-gap: 2.125rem;
+    }
+
+    &__email {
+        display: flex;
+        column-gap: 2.5625rem;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        column-gap: .875rem;
+        span {
+            color: var(--main-color);
+            font-size: 1.875rem;
+            font-weight: var(--bold-weight);
+        }
+    }
+
+    &__right {
+        flex: 0 0 425px;
+        .footer__newsletter {
+            margin-bottom: 2.625rem;
+        }
+    }
+
+    &__newsletter {
+        .footer__subtitle {
+            margin-bottom: 1.25rem;
+        }
+    }
+
+    &__form {
+        input {
+            background-color: var(--white-color);
+            border: 1px solid #E0E3EB;
+            border-radius: 4px;
+            padding: .625rem 0 .625rem .5rem;
+            color: var(--title-color);
+            width: 66%;
+            height: 41px;
+            &::placeholder {
+                color: #A3AAC2;
+                font-size: 1rem;
+            }
+            &:focus {
+                border: 1px solid var(--main-color);
+            }
+        }
+    }
+
+    &__social {
+        .footer__subtitle {
+            margin-bottom: 1.25rem;
+        }
+    }
+
+    &__socails {
+        display: flex;
+        column-gap: 1.25rem;
+    }
+
+    &__social-icon {
+        display: inline-block;
+    }
+
+    &__down {
+        background-color: var(--main-color);
+        padding: 1.625rem 0;
+    }
+
+    &__rights-reserved {
+        color: var(--white-color);
+    }
+}

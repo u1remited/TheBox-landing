@@ -1,0 +1,141 @@
+.exp {
+    padding: 7.625rem 0 6.1875rem 0;
+    &__container {
+        display: flex;
+        align-items: center;
+        column-gap: 126px;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    &__stats {
+        flex: 0 0 580px;
+        height: 518px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        background-color: var(--white-color);
+        border: 1px solid #FFFFFF;
+        box-shadow: 0px 12px 16px -4px rgba(17, 24, 39, 0.1), 0px 4px 6px -2px rgba(17, 24, 39, 0.05);
+        border-radius: .25rem;
+        max-width: 361px;
+        padding: 1.875rem 3.625rem 1.875rem 1.875rem;
+        position: relative;
+        
+        &_1 {
+            position: relative;
+            align-self: flex-end;
+            z-index: 10;
+            &::after {
+                content: '';
+                position: absolute;
+                background: url('../img/exp/clients.png') 0 0 no-repeat;
+                width: 100%;
+                height: 100%;
+                top: -15px;
+                right: 59px;
+                display: inline-block;
+                transform: translateX(100%);
+            }
+        }
+
+        &_2 {
+            position: relative;
+            align-self: flex-start;
+            transform: translateY(-90px);
+            &::after {
+                content: '';
+                position: absolute;
+                background: url('../img/exp/projects.png') 0 0 no-repeat;
+                width: 100%;
+                height: 100%;
+                top: -26px;
+                left: -33px;
+                display: inline-block;
+            }
+        }
+
+        &_3 {
+            position: relative;
+            align-self: flex-end;
+            transform: translate(-58px, -64%);
+            z-index: 10;
+            &::after {
+                content: '';
+                position: absolute;
+                background: url('../img/exp/award.png') 0 0 no-repeat;
+                width: 100%;
+                height: 100%;
+                top: -15px;
+                right: 59px;
+                display: inline-block;
+                transform: translateX(100%);
+            }
+        }
+
+        &_4 {
+            position: relative;
+            transform: translate(49px, -100%);
+            &::after {
+                content: '';
+                position: absolute;
+                background: url('../img/exp/business.png') 0 0 no-repeat;
+                width: 100%;
+                height: 100%;
+                bottom: -104px;
+                right: 59px;
+                display: inline-block;
+                transform: translateX(100%);
+            }
+        }
+    }
+
+    &__number {
+        font-size: 4.5rem;
+        color: var(--title-color);
+        font-weight: var(--semi-bold-weight);
+        line-height: 1.13;
+        display: inline-block;
+    }
+
+    &__info {
+        font-size: var(--h3-fz);
+        position: relative;
+        padding-left: 2.25rem;
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: var(--second-color);
+            width: 7px;
+            height: 28px;
+            left: .75rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__content {
+        flex: 0 0 140px;
+    }
+
+    &__title {
+        font-size: var(--h2-fz-big);
+        color: var(--main-color);
+        line-height: 1.16;
+        font-weight: var(--bold-weight);
+
+    }
+
+    &__descr {
+        margin-top: 2.5rem;
+        font-size: var(--h4-fz);
+        line-height: 1.15;
+
+    }
+
+    &__button {
+        margin-top: 3.25rem;
+    }
+}

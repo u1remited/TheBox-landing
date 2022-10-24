@@ -1,0 +1,85 @@
+// @import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+// @import 'base/variables';
+@import 'base/mixins';
+
+
+@import 'blocks/header';
+@import 'blocks/home';
+@import 'base/root';
+@import 'blocks/buttons';
+@import 'blocks/reputation';
+@import 'blocks/about';
+@import 'blocks/services';
+@import 'blocks/exp';
+@import 'blocks/consult';
+@import 'blocks/project';
+@import 'blocks/contact';
+@import 'blocks/footer';
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: var(--normal-fz);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-weight: var(--normal-weight);
+}
+
+h1,h2,h3,h4 {
+    color: var(--title-color);
+    font-weight: var(--bold-weight);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: initial;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--m-p-32);
+}
+
+.grid {
+    display: grid;
+}
+
+.section__title {
+    font-size: var(--h2-fz);
+    color: var(--title-color);
+    font-weight: var(--bold-weight);
+    text-align: center;
+    &_l {
+        text-align: left;
+    }
+    &_white {
+        text-align: left;
+        color: var(--white-color);
+    }
+}

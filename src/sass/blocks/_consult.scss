@@ -1,0 +1,45 @@
+.consult {
+    padding: 6.25rem 0;
+    background: url('../img/consult/consultaion-bg.jpg') center (center/cover) no-repeat;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        z-index: 1;
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 3;
+    }
+
+    &__info {
+        color: var(--white-color);
+        font-size: var(--h3-fz);
+        margin-top: 1.875rem;
+        a {
+            color: var(--white-color);
+            text-decoration: underline;
+            transition: .4s all;
+            &:hover {
+                color: var(--second-color);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__button {
+        position: relative;
+        z-index: 3;
+    }
+}

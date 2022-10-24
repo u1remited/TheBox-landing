@@ -1,0 +1,15 @@
+@mixin line {
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1.5px;
+        background-color: var(--main-color);
+        bottom: -8px;
+        left: 0;
+        transition: .4s all;
+    }
+    &:hover {
+        width: 100%;
+    }
+}
